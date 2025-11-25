@@ -8,15 +8,12 @@ int main() {
     cout << "Digite dois números: ";
     cin >> N1 >> N2;
     
-    for (int i = N1 + 1; i < N2; i++) {
+    int menor = N1 < N2 ? N1 : N2;
+    int maior = N1 > N2 ? N1 : N2;
+    
+    for (int i = menor + 1; i < maior; i++) {
         if (i % 2 != 0) {
             soma += i;
-        }
-    }
-    
-    for (int i = N2 + 1; i < N1; i++) {
-        if (i % 2 != 0) {
-            soma += 1;
         }
     }
     
